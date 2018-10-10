@@ -12,13 +12,13 @@ class App extends Component {
       <BrowserRouter>
       <div>
         <ul className="header">
-            <li><NavLink exact to="/Todo">Todo</NavLink></li>
+            <li><NavLink exact to="/">Todo</NavLink></li>
             <li><NavLink to="/Post">Post</NavLink></li>
             <li><NavLink to="/AboutUs">About Us</NavLink></li>
         </ul>
         <div className="content">
         <Switch>
-            <Route exact path="/Todo" component={TodoTable} />
+            <Route exact path="/" component={TodoTable} />
             <Route path="/Post" component={PostTable} />
             <Route path="/AboutUs" component={AboutUs}/>
         </Switch>
